@@ -1,38 +1,210 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+
+.App-inner {
+  background-color: rgb(246, 237, 255);
+  font-family: manrope;
+}
+.logo {
+  height: 30px;
+  width: 150px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Navbar-outer {
+  display: flex ;
+  padding: 0.005%;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-inner1 {
   display: flex;
-  flex-direction: column;
+  padding: 1%;
+  justify-content: space-evenly;
+}
+
+.navbar-btn:hover {
+  transform: scale(1.05);
+}
+
+.login {
+  margin-right:10%;
+}
+
+.login:hover {
+  transform: scale(1.05);
+}
+
+.signup {
+  margin-right: 30%;
+}
+
+.signup:hover {
+  transform: scale(1.05);
+}
+
+.navbar-inner2 {
+  display: flex;
+  padding: 1%;
+  justify-content: space-evenly;
+}
+.nav-accordion {
+  color: black;
+  font-weight: 630;
+}
+
+.Title-outer {
+  display: flex;
+  padding: 3%;
+  justify-content: space-between;
+  margin-left: 6%;
+  margin-right: 6%;
+  border-color: black;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title-name {
+  font-size: 300%;
+  font-weight: 1000;
+  font-family: manrope;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Filter-outer {
+  display: flex ;
+  padding: 0.5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: white;
+  justify-content: space-evenly;
+}
+
+.vl {
+  border-left: 3px solid rgb(251, 235, 255);
+  height: 50px;
+}
+
+.filter-title {
+  font-family: manrope;
+  font-size: 90%;
+  font-weight: 800;
+  color: rgb(152, 152, 152);
+}
+
+.filter-price {
+  font-size: 20px;
+  font-weight: 1000 !important;
+}
+.search-btn {
+  padding: 10%
+}
+
+.search-btn:hover {
+  transform: scale(1.05);
+}
+
+.rent_button {
+  color: black;
+}
+
+.Result-outer {
+  margin-top: 3%;
+  width: 100%;
+  padding-bottom:30%;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.property-component {
+  background-color: white;
+  margin-left: 3%;
+  border-radius: 10px;
+}
+
+.property-component-display {
+  height: 180px;
+  max-width: 100;
+}
+
+img {
+  max-height: 180px;
+  width: 600px;
+  border-radius: 10px;
+}
+
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  padding: 1%;
+}
+
+.price1 {
+  color: rgb(125, 2, 186);
+  font-size: 35px;
+  font-weight: 700;
+}
+.month {
+  color: rgb(137, 137, 137);
+  font-weight: 600;
+}
+.data-title {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 2%;
+}
+.data-address {
+  color: rgb(137, 137, 137);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 2%;
+  padding: 2%;
+}
+
+.data-details {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(137, 137, 137);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 2%;
+}
+.Result-inner {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5%;
+  column-gap: 2.5%;
+}
+
+.img-bed {
+  width: 20px;
+}
+
+.data-details-subsection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-heart {
+  width: 50px;
+  height: 50px;
+}
+
+.ranges {
+  font-weight: 800;
+}
+
+.Search-bar {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 20px;
+  font-weight: 900 !important;
+  width: 101%;
+  padding: 1%;
 }
